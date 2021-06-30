@@ -25,7 +25,10 @@ async def playAudio(voiceChannel, absAudioRoute):
         await voiceClient.disconnect()
 
 #async def findAudio(senderMessage):
-    
+
+f = open('help.txt', 'r')
+helpMseg = f.read()
+f.close()
     
 
 @client.event
@@ -57,7 +60,7 @@ async def on_message(message):
         await message.channel.send('Obvio pa! vamo a mechar eso brodilovi') """
 
     if message.content.startswith('$BotardoBuenardo help'):
-        await message.channel.send('Todavía no se configuró el help\nTodos los comandos empiezan con $BotardoBuenardo\n Si querés saber que audios hay preguntale al gordo.') 
+        await message.channel.send(helpMseg) 
 
     if message.content.startswith('$BotardoBuenardo pasate el audio de stepbro'):
        await playAudio(message.author.voice.channel,'./audioFiles/stepbro.mp3')
