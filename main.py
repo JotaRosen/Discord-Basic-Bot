@@ -83,6 +83,9 @@ async def on_message(message):
     
     if message.content.startswith('$BotardoBuenardo aguante boke pato'):
        await playAudio(message.author.voice.channel,'./audioFiles/aguanteboke.mp3')
+    
+    if message.content.startswith('$BotardoBuenardo tenemos un monton de queso'):
+       await playAudio(message.author.voice.channel,'./audioFiles/unMontondeQueso.mp3')
 
     #if message.content.startswith('$ '):
         #await message.channel.send('La verdad que no te entendí pedazo de gato. Por ahora solo me podes decir "$Hola BotardoBuenardo soy Rami" o "$Buenas BotardoBuenardo"')
