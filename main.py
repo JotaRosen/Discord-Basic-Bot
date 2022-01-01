@@ -77,6 +77,11 @@ async def on_message(message):
     if message.content.startswith('$BotardoBuenardo la concha de tu madre'):
        await playAudio(message.author.voice.channel,'./audioFiles/conchatumadre.mp3')
     
+    if message.content.startswith('$BotardoBuenardo uwu'):
+       await playAudio(message.author.voice.channel,'./audioFiles/uwu.mp3')
+
+    if message.content.startswith('$BotardoBuenardo onichan'):
+       await playAudio(message.author.voice.channel,'./audioFiles/onichan.mp3')
 
     if message.content.startswith('$BotardoBuenardo ahí lo tenes al pelotudo'):
        await playAudio(message.author.voice.channel,'./audioFiles/ahilotenes.mp3')
